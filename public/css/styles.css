@@ -1,0 +1,52 @@
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+    margin: 0;
+    padding: 20px; 
+}
+
+/* Heading styles */
+h1 {
+    color: #ff6f61; 
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0; 
+}
+
+nav a {
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: #007bff; 
+}
+
+/* Form styles */
+form {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Submit button styles */
+button {
+    background-color: #ff6f61; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff4c4c; 
+}
+
+/* Image styles */
+img {
+    border-radius: 8px; 
+}
