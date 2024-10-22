@@ -14,7 +14,7 @@ How to Get It Running
 1. Clone this repo to your local machine.
 2. Go into the project folder:
 
-   ```bash
+   bash
    cd alab-318.2
 
 Install the dependencies:
