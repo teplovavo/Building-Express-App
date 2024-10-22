@@ -73,3 +73,10 @@ const logRequests = (req, res, next) => {
     next(); // call the next middleware or route handler
 
 };
+
+app.use(logRequests); //use the logging middleware for all routes
+
+
+//---------------------------------------------------PART 3 ---------------------------------------------------------------------------------
+console.log ("Part 3");
+
