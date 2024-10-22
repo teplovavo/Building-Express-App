@@ -39,4 +39,21 @@ app.get('/', (req, res) => {
 app.post('/submit', (req, res) => {
     console.log(req.body); //log the submitted form data to the console
     res.send("Success!"); //send a simple response
-})
+});
+
+//----------------------------------------------------------------------
+
+//define a route with a parameter
+app.get('/user/:id', (req, res) => {
+    const userId = req.params.id; //get the user id from the route parametr
+    res.send( `User ID: ${userId} `); //send back the user id
+});
+
+//----------------------------------------------------------------------
+
+//start the server
+const PORT = process.env.PORT || 3000; //set the port number
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost: ${PORT}`);
+
+});
