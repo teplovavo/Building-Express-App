@@ -1,6 +1,11 @@
 console.log ("The code is running");
 
 
+//---------------------------------------------------PART 1 ---------------------------------------------------------------------------------
+console.log ("Part 1");
+
+
+
 //import required modules
 
 const express = require ('express'); //import express framework
@@ -57,3 +62,14 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost: ${PORT}`);
 
 });
+
+//---------------------------------------------------PART 2 ---------------------------------------------------------------------------------
+console.log ("Part 2");
+
+
+//middleware function
+const logRequests = (req, res, next) => {
+    console.log (`${req.method} ${req.url}`); //log the HTTP method and url
+    next(); // call the next middleware or route handler
+
+};
