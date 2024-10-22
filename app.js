@@ -81,6 +81,7 @@ app.use(logRequests); //use the logging middleware for all routes
 console.log ("Part 3");
 
 app.get('/download', (req, res) => {
-    const file = path.join(__dirname, 'public', './public/ai-generated-image.webp'); //set the image path
+    const file = path.join(__dirname, 'public', 'ai-generated-image.webp'); //set the image path
     res.download(file); //send the file for download
 });
+
